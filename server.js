@@ -6,7 +6,7 @@ const cors = require('cors');
 const shortId = require('shortid');
 //mogoose
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MLAB_URI || 'mongodb://localhost/excercise-track');
+mongoose.connect(process.env.MLAB_URI || 'mongodb://fcc_admin:abc123@ds157844.mlab.com:57844/freecodecamp');
 const Schema = mongoose.Schema;
 //Middleware
 app.use(cors());
